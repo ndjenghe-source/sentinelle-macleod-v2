@@ -11,7 +11,7 @@ TELEGRAM_TOKEN = os.environ.get("TELEGRAM_TOKEN")
 
 # 2. Configuration du cerveau Gemini
 genai.configure(api_key=GEMINI_API_KEY)
-model = genai.GenerativeModel('models/gemini-1.5-flash')
+model = genai.GenerativeModel('gemini-1.5-flash-latest')
 # 3. Initialisation du Bot avec sécurité anti-conflit
 bot = telebot.TeleBot(TELEGRAM_TOKEN, threaded=False)
 
